@@ -192,7 +192,7 @@ button.camera-control:hover {
 }
 .gb-menu-items div{
   border: 1px solid #607d8b; 
-  --border: 1px solid red; 
+  border: 1px solid red; 
   width: 100%; 
   text-align: center;
   font-family:'HelveticaNeue-Light', 'HelveticaNeue', Helvetica, Arial, sans-serif;

@@ -22,7 +22,7 @@
         <meta charset="utf-8" />
         <meta name="format-detection" content="telephone=no" />
         <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
-        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=medium-dpi" />
         <link rel="stylesheet" type="text/css" href="css/index.css" />
 
         <script type="text/javascript" src="../plugins/iscroll.js"></script>
@@ -32,10 +32,10 @@
 
         <script type="text/javascript" src="js/processing/processing.min.js"></script>  
 
+
         <title>SHOPPING BUDDY</title>
     </head>
     <body>
-
         <div id="header">
             <ul class="menu">
                 <li><a class="main-menu" href="index.php">HOME</a></li>
@@ -46,7 +46,7 @@
             <div class="table-properties">ITEM</div><div class="table-properties">AMOUNT</div><div class="table-properties">SUBTOTAL</div>
         </div>
 
-        <div id="wrapper" class="wrapper-list">
+        <div id="wrapper"> <!--class="wrapper-list"-->
         <div id="scroller">
             <ul id="items-container">
             </ul>

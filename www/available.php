@@ -22,7 +22,7 @@
         <meta charset="utf-8" />
         <meta name="format-detection" content="telephone=no" />
         <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
-        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=medium-dpi" />
         <link rel="stylesheet" type="text/css" href="css/index.css" />
 
         <script type="text/javascript" src="../plugins/iscroll.js"></script>
@@ -32,6 +32,8 @@
 
         <script type="text/javascript" src="js/processing/processing.min.js"></script>  
 
+		  <link href="http://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+        
         <title>GROCER'S BUDDY</title>
     </head>
     <body>
@@ -68,18 +70,22 @@
 
 
             for (var i = 0; i < gatheredPosts.length; i++) {
-                    var linkText = document.createTextNode("+ add me to cart");
+                    var linkText = document.createTextNode("Add me to cart");
                     var link = document.createElement("a");
                     link.value = i;
                     link.id = "item"+i;
                     link.href = "#";
                     link.appendChild(linkText);
+                    link.style="text-decoration:none; color:#2e2e2e;";
+                    link.className="fa fa-shopping-cart";
                     var x = document.createElement("div");
                     x.className="gb-grocery-items-inner"
                     var y = document.createElement("div");
                     y.className="gb-grocery-items"
                     var z = document.createElement("li")
-                    var t = document.createTextNode(i+" -- "+gatheredPosts[i].title+": "+gatheredPosts[i].price);
+                    //var t = document.createTextNode(i+" -- "+gatheredPosts[i].title+": "+gatheredPosts[i].price);
+						  var t = document.createTextNode(gatheredPosts[i].title+": "+gatheredPosts[i].price);
+                                        
                     x.appendChild(t);
                     x.appendChild(link);
                     y.appendChild(x);
