@@ -206,8 +206,9 @@ button.camera-control:hover {
 }
 
 .gb-grocery-items-inner{
-  border: 1px solid red;
+  border: 1px solid #607d8b;
   height: 150px;
+  padding-top: 5%;
 }
 
 * {
@@ -336,7 +337,7 @@ body {
 }
 
 .table-properties{
-  border: 1px solid #2e2e2e;
+  border: 1px solid #607d8b;
   float: left;
   width: 33.33%;
   background-color: white;
@@ -351,4 +352,16 @@ body {
   color: gray;
   padding: 50% 0px;
   text-align: center;
+}
+
+.cart-link{
+  background-color: #0288d1;
+  color:#b3e5fc;
+  height: 50%;
+  padding-top: 5%;
+}
+
+.cart-link:hover{
+  background-color: #607d8b;
+  color: #cfd8dc;
 }

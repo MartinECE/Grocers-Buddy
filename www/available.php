@@ -54,7 +54,7 @@
 
         <div id="wrapper">
         <div id="scroller">
-            <ul id="items-container">
+            <ul id="items-container" >
                 
             </ul>
         </div>
@@ -77,22 +77,27 @@
 
 
             for (var i = 0; i < gatheredPosts.length; i++) {
-                    var linkText = document.createTextNode("Add me to cart");
+                    var linkText = document.createTextNode(" Add me to cart");
                     var link = document.createElement("a");
                     link.value = i;
                     link.id = "item"+i;
                     link.href = "#";
                     link.appendChild(linkText);
-                    link.style="text-decoration:none; color:#2e2e2e;";
-                    link.className="fa fa-shopping-cart";
+                    link.style="text-decoration:none; width:100%;";
+                    link.className="cart-link fa fa-shopping-cart";
+                    link.on
                     var x = document.createElement("div");
-                    x.className="gb-grocery-items-inner"
+                    x.className="gb-grocery-items-inner";
+				                    
                     var y = document.createElement("div");
-                    y.className="gb-grocery-items"
-                    var z = document.createElement("li")
+                    y.className="gb-grocery-items";
+                    y.style="text-align:center; padding-top:5px;";                   
+                    
+                    var z = document.createElement("li");
+                    z.style ="margin-top:5px;";
                     //var t = document.createTextNode(i+" -- "+gatheredPosts[i].title+": "+gatheredPosts[i].price);
-						  var t = document.createTextNode(gatheredPosts[i].title+": "+gatheredPosts[i].price);
-                                        
+						  var t = document.createTextNode(gatheredPosts[i].title+": Php "+gatheredPosts[i].price);
+						  
                     x.appendChild(t);
                     x.appendChild(link);
                     y.appendChild(x);
@@ -126,7 +131,7 @@
 
                 var times
                 times = prompt("How Many?");
-                alert("times"+times);
+                alert(times+"pcs.");
                 shoppingCart.push({carttitle:gatheredPosts[evt.target.value].title, cartprice:gatheredPosts[evt.target.value].price, carttimes: times});
                
                 /*

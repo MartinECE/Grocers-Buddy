@@ -64,7 +64,7 @@
         </div>
 
         <div id="footer">
-            <label>TOTAL: <span id="total-amount"></span></label>
+            <label style="color:#727272;">TOTAL: <span id="total-amount"></span></label>
         </div>
 
         <script type="text/javascript" src="js/index.js"></script>
@@ -87,6 +87,7 @@
                 for (var i = 0; i < shoppingCart.length; i++) {
                         var z = document.createElement("li");
                         var t = document.createTextNode(shoppingCart[i].carttitle+" ("+shoppingCart[i].carttimes+") - "+parseFloat(shoppingCart[i].cartprice)*parseFloat(shoppingCart[i].carttimes));
+								z.style="color:#607d8b;";  
                         z.appendChild(t);
 
                         var int1 = parseFloat(shoppingCart[i].carttimes);
@@ -101,7 +102,7 @@
             var tot;
             if(sumtotal==0.00||sumtotal==""){
                 tot = document.createTextNode("Php 0.00");
-                document.getElementById("items-container").innerHTML = "<div class='defaultMessage'>No items yet...</div>";
+                document.getElementById("items-container").innerHTML = "<div class='defaultMessage' style='color:#607d8b;'>No items yet...</div>";
             }
             else{
                 tot = document.createTextNode("Php "+sumtotal);
