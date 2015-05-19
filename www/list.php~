@@ -32,21 +32,31 @@
 
         <script type="text/javascript" src="js/processing/processing.min.js"></script>  
 
-
-        <title>SHOPPING BUDDY</title>
+		  <link href="http://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+        
+        <script type="text/javascript">
+		  var myScroll;
+		  function loaded() {
+		  myScroll = new IScroll('#wrapper');
+		  }
+		  </script>        
+        
+        <title>My Cart</title>
     </head>
     <body>
         <div id="header">
             <ul class="menu">
-                <li><a class="main-menu" href="index.php">HOME</a></li>
-                <li><a class="main-menu" href="available.php">SHOP</a></li>
-                <li><a class="main-menu" href="list.php">CART</a></li>
-                <button  onmouseover="this.style.color= '#d32f2f'" onmouseout="this.style.color='#f44336'" id="cleardata">CLEAR CART</button>
+                <li><a class="main-menu" href="index.php"><i class="fa fa-home"></i></a></li>
+                <li><a class="main-menu" href="available.php"><i class="fa fa-calendar"></i></a></li>
+                <li><a class="main-menu" href="list.php"><i class="fa fa-shopping-cart"></i> </a></li>
+                <button  onmouseover="this.style.backgroundColor= '#d32f2f'" onmouseout="this.style.backgroundColor='#f44336'" id="cleardata">CLEAR CART</button>
             </ul>
-            <div class="table-properties">ITEM</div><div class="table-properties">AMOUNT</div><div class="table-properties">SUBTOTAL</div>
+            <div class="table-properties" style="color:#727272;">ITEM</div>
+            <div class="table-properties" style="color:#727272;">AMOUNT</div>
+            <div class="table-properties" style="color:#727272;">SUBTOTAL</div>
         </div>
 
-        <div id="wrapper"> <!--class="wrapper-list"-->
+        <div id="wrapper" class="wrapper-list">
         <div id="scroller">
             <ul id="items-container">
             </ul>
